@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project_1/pages/forget_page.dart';
+import 'package:project_1/pages/login_page.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -73,7 +75,9 @@ class HomePage extends StatelessWidget {
              ListTile(  
               leading: Icon(Icons.logout_sharp), title: Text("log Out"),  
               onTap: () {  
-                Navigator.pop(context);  
+                Navigator.push(context,
+                  new MaterialPageRoute(builder: 
+                  (context) => new Loginpage(),));  
               },  
             ),
           ]

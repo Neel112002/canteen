@@ -24,20 +24,27 @@ class forgot_page  extends StatelessWidget {
          SizedBox(
           height: 30.0,
         ),
-        TextFormField(
-          decoration: InputDecoration(
-            hintText: " ENTER NEW PASSWORD",
-            labelText: "NEW PASSWORD"
-            ),
-        ),
-         SizedBox(
-          height: 20.0,
-        ),
-        TextFormField(
-          decoration: InputDecoration(
-            hintText: " CONFIRM NEW PASSWORD",
-            labelText: "CONFIRM NEW PASSWORD"
-            ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 30),
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: " ENTER NEW PASSWORD",
+                  labelText: "NEW PASSWORD"
+                  ),
+              ),
+               SizedBox(
+                height: 20.0,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: " CONFIRM NEW PASSWORD",
+                  labelText: "CONFIRM NEW PASSWORD"
+                  ),
+              ),
+            ],
+          ),
         ),
         const SizedBox(
            height: 30,
