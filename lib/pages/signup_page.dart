@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/pages/home_page.dart';
+import 'package:project_1/pages/login_page.dart';
 
 class signupPage extends StatelessWidget {
   const signupPage({ Key? key }) : super(key: key);
@@ -27,12 +28,7 @@ class signupPage extends StatelessWidget {
             labelText: " username"
             ),
         ),
-         TextFormField(
-          decoration: InputDecoration(
-            hintText: " confirm username",
-            labelText: " confirm  username"
-            ),
-        ),
+       
          TextFormField(
           decoration: InputDecoration(
             hintText: " Enter new password",
@@ -44,11 +40,11 @@ class signupPage extends StatelessWidget {
             labelText: " confirm password"
          )),
              ElevatedButton(
-                child: Text("Login"),
+                child: Text("Signup"),
                 style: TextButton.styleFrom(),
                 onPressed: () {
                   Navigator.push(context, 
-                    MaterialPageRoute(builder: (context) => const HomePage(),));
+                    MaterialPageRoute(builder: (context) => const Loginpage(),));
                 },
               ),
              
