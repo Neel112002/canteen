@@ -12,35 +12,43 @@ class signupPage extends StatelessWidget {
       child: Column(
         children: [Image.asset("assets/images/loginimage.png",
         fit: BoxFit.cover,),
-        Text(
+        const Text(
           "welcome",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20.0,
         ),
         TextFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             hintText: " Enter username",
             labelText: " username"
             ),
         ),
-       
+       const SizedBox(
+           height: 8,
+        ),
          TextFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             hintText: " Enter new password",
             labelText: " new password"
          )),
+         const SizedBox(
+           height: 8,
+        ),
           TextFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             hintText: "  confirm password",
             labelText: " confirm password"
          )),
+         const SizedBox(
+           height: 30,
+        ),
              ElevatedButton(
-                child: Text("Signup"),
+                child: const Text("Signup"),
                 style: TextButton.styleFrom(),
                 onPressed: () {
                   Navigator.push(context, 

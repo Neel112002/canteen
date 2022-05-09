@@ -11,15 +11,18 @@ class forgot_page  extends StatelessWidget {
         color: Colors.white,
         child: Column(
           children: [
+            const SizedBox(
+           height: 65,
+        ),
             Text( 
-              "LETS RESET UR PASSWORD",
+              "LET'S RESET YOUR PASSWORD",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
          SizedBox(
-          height: 20.0,
+          height: 30.0,
         ),
         TextFormField(
           decoration: InputDecoration(
@@ -36,7 +39,9 @@ class forgot_page  extends StatelessWidget {
             labelText: "CONFIRM NEW PASSWORD"
             ),
         ),
-        
+        const SizedBox(
+           height: 30,
+        ),
                 ElevatedButton(
                 child: Text("Login"),
                 style: TextButton.styleFrom(),

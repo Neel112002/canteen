@@ -30,7 +30,7 @@ moveToHome(BuildContext context) async{
  setState(() {
               changeButton=true;
             });
-            await Future.delayed(Duration(seconds: 1));
+            await Future.delayed(const Duration(seconds: 1));
             await Navigator.pushNamed(context, MyRoutes.homeRoute);
 
             setState(() {
@@ -50,19 +50,20 @@ moveToHome(BuildContext context) async{
         fit: BoxFit.cover,),
         Text(
           "welcome $name",
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20.0,
         ),
         TextFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             hintText: " Enter username",
             labelText: "username"
             ),
+            
           
             onChanged: (value){
               name=value;
@@ -70,29 +71,38 @@ moveToHome(BuildContext context) async{
                 
               });
             },
+            validator: (value){
+              if(value!.isEmpty){
+                
+                return "username is not valid";
+              }
+            } ,
+        ),
+        SizedBox(
+          height: 8,
         ),
        
          TextFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
                   hintText: " Enter password",
                    labelText: "password"
                         ),
                 ),
-         SizedBox(
-           height: 18.0,
+         const SizedBox(
+           height: 30,
         ),
         InkWell(
           onTap: ()  => moveToHome(context),
          child: AnimatedContainer(
-           duration: Duration(seconds: 1),
+           duration: const Duration(seconds: 1),
            width: changeButton ? 50:100,
            height: 30,
            
            alignment: Alignment.center,
            child: changeButton ? 
-           Icon(Icons.done,
+           const Icon(Icons.done,
            color: Colors.white ,)
-           : Text("login", style: TextStyle(
+           : const Text("login", style: TextStyle(
              color: Colors.white,
              fontWeight: FontWeight.bold,
              fontSize:19 ),
@@ -106,11 +116,11 @@ moveToHome(BuildContext context) async{
         ),
          
            
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               ElevatedButton(
-                child: Text("SignUp"),
+                child: const Text("SignUp"),
                 style: TextButton.styleFrom(),
                 onPressed: () {
                   Navigator.push(context, 
@@ -121,7 +131,7 @@ moveToHome(BuildContext context) async{
               Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
-                child: Text(
+                child: const Text(
                   "Forgot password?",
                   style: TextStyle(
                       color: Colors.blue,
