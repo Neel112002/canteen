@@ -24,6 +24,15 @@ class signupPage extends StatelessWidget {
         ),
         TextFormField(
           decoration: const InputDecoration(
+            hintText: " Enter college email",
+            labelText: " College email"
+            ),
+        ),
+        const SizedBox(
+          height: 20.0,
+        ),
+        TextFormField(
+          decoration: const InputDecoration(
             hintText: " Enter username",
             labelText: " username"
             ),

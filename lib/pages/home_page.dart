@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/pages/forget_page.dart';
 import 'package:project_1/pages/login_page.dart';
+import 'package:project_1/pages/settings_page.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -14,7 +15,7 @@ class HomePage extends StatelessWidget {
 
     return  Scaffold(
       appBar: AppBar(
-        title: Text("Canteen Managment System"),
+        title: const Text("Canteen Managment System"),
       ),
         body:Center(
         child:Container(
@@ -37,43 +38,47 @@ class HomePage extends StatelessWidget {
               ),
             ),
              ListTile(  
-              leading: Icon(Icons.home), title: Text("Home"),  
+              leading: const Icon(Icons.home), title: const Text("Home"),  
               onTap: () {  
                 Navigator.pop(context);  
               },  
             ),  
              ListTile(  
-              leading: Icon(Icons.shopping_cart), title: Text("your  orders"),  
+              leading: const Icon(Icons.shopping_cart), title: const Text("your  orders"),  
               onTap: () {  
                 Navigator.pop(context);  
               },  
             ),  
             ListTile(  
-              leading: Icon(Icons.favorite_border_outlined), title: Text("Favourite orders"),  
+              leading: const Icon(Icons.favorite_border_outlined), title: const Text("Favourite orders"),  
               onTap: () {  
                 Navigator.pop(context);  
               },  
             ),  
             ListTile(  
-              leading: Icon(Icons.settings), title: Text("Settings"),  
-              onTap: () {  
-                Navigator.pop(context);  
-              },  
+              leading: const Icon(Icons.settings), title: const Text("Settings"),  
+             onTap: () {
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new SettingsPage(),
+                  ));
+            }, 
             ),  
             ListTile(  
-              leading: Icon(Icons.contacts), title: Text("Contact Us"),  
+              leading: const Icon(Icons.contacts), title: const Text("Contact Us"),  
               onTap: () {  
                 Navigator.pop(context);  
               },  
             ),
              ListTile(  
-              leading: Icon(Icons.help_center), title: Text("Help"),  
+              leading: const Icon(Icons.help_center), title: const Text("Help"),  
               onTap: () {  
                 Navigator.pop(context);  
               },  
             ),
              ListTile(  
-              leading: Icon(Icons.logout_sharp), title: Text("log Out"),  
+              leading: const Icon(Icons.logout_sharp), title: const Text("log Out"),  
               onTap: () {  
                 Navigator.push(context,
                   new MaterialPageRoute(builder: 
