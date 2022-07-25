@@ -7,23 +7,19 @@
 // import 'package:project_1/pages/signup_page.dart';
 // import 'package:project_1/utils/routes.dart';
 
-
-
 // void main(){
-//   runApp(MyApp()); 
+//   runApp(MyApp());
 // }
-
 
 // class MyApp extends StatelessWidget {
 
 //   @override
 //   Widget build(BuildContext context) {
-   
 
 //     return MaterialApp(
-      
+
 //       themeMode: ThemeMode.light,
-//       theme: ThemeData( 
+//       theme: ThemeData(
 //         primarySwatch: Colors.deepPurple,
 //        fontFamily: GoogleFonts.lato().fontFamily,
 //       ),
@@ -40,9 +36,6 @@
 //       );
 //   }
 // }
-
-
-
 
 // import 'package:flutter/material.dart';
 // import 'package:flutter_application_2/home_page.dart';

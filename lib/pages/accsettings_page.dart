@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project_1/pages/ch_password.dart';
+import 'package:project_1/pages/ch_username.dart';
 
 import 'package:project_1/pages/login_page.dart';
 import 'package:project_1/pages/home_page.dart';
@@ -27,13 +29,13 @@ class AccSettings extends StatelessWidget {
               "Change Username",
               style: TextStyle(fontSize: 18),
             ),
-            // onTap: () {
-            //   Navigator.push(
-            //       context,
-            //       new MaterialPageRoute(
-            //         builder: (context) => new EditProfile(),
-            //       ));
-            // },
+            onTap: () {
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new EditProfile(),
+                  ));
+            },
           ),
           Divider(
             color: Color.fromARGB(255, 200, 194, 194),
@@ -51,13 +53,13 @@ class AccSettings extends StatelessWidget {
               "Change Password",
               style: TextStyle(fontSize: 18),
             ),
-            // onTap: () {
-            //   Navigator.push(
-            //       context,
-            //       new MaterialPageRoute(
-            //         builder: (context) => new AccountSettings(),
-            //       ));
-            // },
+            onTap: () {
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new EditPass(),
+                  ));
+            },
           ),
           Divider(
             color: Color.fromARGB(255, 200, 194, 194),

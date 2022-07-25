@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:project_1/pages/home_page.dart';
 import 'package:project_1/pages/login_page.dart';
-// import 'accsettings_page.dart';
-
+import 'package:project_1/pages/accsettings_page.dart';
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
 
@@ -34,13 +33,13 @@ class SettingsPage extends StatelessWidget {
               "Account Settings",
               style: TextStyle(fontSize: 18),
             ),
-            // onTap: () {
-            //   Navigator.push(
-            //       context,
-            //       new MaterialPageRoute(
-            //         builder: (context) => new AccSettings(),
-            //       ));
-            // },
+            onTap: () {
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new AccSettings(),
+                  ));
+            },
           ),
           Divider(
             color: Color.fromARGB(255, 200, 194, 194),
